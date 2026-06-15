@@ -1,6 +1,6 @@
-# amberrootdev.github.io
+# Amber Root Portfolio
 
-A lightweight static portfolio for GitHub Pages.
+A lightweight static portfolio for Amber Root on GitHub Pages.
 
 ## Preview locally
 
