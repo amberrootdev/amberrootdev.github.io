@@ -86,7 +86,7 @@ input {
 }
 
 .section {
-  padding: 96px 0;
+  padding: 84px 0;
 }
 
 .skip-link {
@@ -138,7 +138,7 @@ input {
   align-items: center;
   justify-content: space-between;
   min-height: 82px;
-  gap: 24px;
+  gap: 18px;
 }
 
 .brand {
@@ -224,13 +224,13 @@ input {
 
 .hero {
   overflow: hidden;
-  padding-top: 82px;
+  padding-top: 64px;
 }
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
-  gap: 56px;
+  grid-template-columns: minmax(0, 0.98fr) minmax(340px, 0.82fr);
+  gap: 44px;
   align-items: center;
 }
 
@@ -253,30 +253,30 @@ p {
 h1,
 h2,
 h3 {
-  line-height: 1.03;
-  letter-spacing: -0.055em;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
 }
 
 h1 {
-  max-width: 680px;
-  margin-bottom: 24px;
-  font-size: clamp(2.85rem, 5.8vw, 5.35rem);
+  max-width: 590px;
+  margin-bottom: 20px;
+  font-size: clamp(2.2rem, 4.2vw, 3.85rem);
 }
 
 h2 {
   margin-bottom: 20px;
-  font-size: clamp(2.25rem, 4.8vw, 4.6rem);
+  font-size: clamp(1.9rem, 3.8vw, 3.35rem);
 }
 
 h3 {
   margin-bottom: 14px;
-  font-size: clamp(1.45rem, 2.4vw, 2.15rem);
+  font-size: clamp(1.3rem, 2vw, 1.9rem);
 }
 
 .hero-lede {
-  max-width: 650px;
+  max-width: 560px;
   color: var(--muted);
-  font-size: clamp(1.14rem, 1.8vw, 1.35rem);
+  font-size: clamp(1rem, 1.45vw, 1.18rem);
 }
 
 .hero-actions,
@@ -284,7 +284,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-top: 32px;
+  margin-top: 28px;
 }
 
 .button {
@@ -322,7 +322,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 36px;
+  margin-top: 30px;
 }
 
 .quick-stats span {
@@ -343,7 +343,7 @@ h3 {
 
 .hero-card {
   position: relative;
-  min-height: 560px;
+  min-height: 520px;
 }
 
 .avatar-card {
@@ -351,29 +351,29 @@ h3 {
   z-index: 2;
   display: grid;
   place-items: center;
-  min-height: 430px;
-  margin: 42px auto 0;
+  min-height: 395px;
+  margin: 36px auto 0;
   border: 2px solid var(--text);
   border-radius: var(--radius-lg);
   background:
     linear-gradient(160deg, color-mix(in srgb, var(--surface) 82%, transparent), var(--surface)),
     repeating-linear-gradient(135deg, transparent 0 18px, rgba(124, 58, 237, 0.08) 18px 20px);
   box-shadow: 14px 14px 0 var(--text), var(--shadow);
-  padding: 36px;
+  padding: 32px;
   text-align: center;
 }
 
 .avatar {
   display: grid;
-  width: 156px;
-  height: 156px;
+  width: 136px;
+  height: 136px;
   place-items: center;
-  margin-bottom: 28px;
+  margin-bottom: 24px;
   border: 4px solid var(--text);
   border-radius: 44% 56% 48% 52%;
   background: linear-gradient(135deg, var(--amber), var(--primary));
   color: #ffffff;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   font-weight: 900;
   letter-spacing: -0.12em;
 }
@@ -385,7 +385,7 @@ h3 {
 }
 
 .avatar-card h2 {
-  font-size: clamp(2rem, 3.8vw, 3.35rem);
+  font-size: clamp(1.75rem, 3vw, 2.55rem);
 }
 
 .profile-orbit {
@@ -461,7 +461,7 @@ h3 {
 .split-panel {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
-  gap: 40px;
+  gap: 32px;
   align-items: center;
   border: 2px solid var(--text);
   border-radius: var(--radius-lg);
@@ -527,6 +527,7 @@ h3 {
 .project-card,
 .feature-card,
 .contact-card {
+  min-width: 0;
   border: 2px solid var(--text);
   border-radius: var(--radius-md);
   background: var(--surface);
@@ -621,6 +622,10 @@ h3 {
 .article-row:hover {
   box-shadow: 2px 2px 0 var(--text);
   transform: translate(3px, 3px);
+}
+
+.article-row strong {
+  min-width: 0;
 }
 
 .article-date,
@@ -729,6 +734,7 @@ h3 {
   color: var(--text);
   font-weight: 800;
   padding: 10px 14px;
+  overflow-wrap: anywhere;
 }
 
 .contact-card {
@@ -811,9 +817,19 @@ h3 {
   font-weight: 800;
 }
 
+@media (max-width: 1100px) {
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .featured-card {
+    grid-column: 1 / -1;
+  }
+}
+
 @media (max-width: 960px) {
   .section {
-    padding: 72px 0;
+    padding: 68px 0;
   }
 
   .hero-grid,
@@ -861,7 +877,7 @@ h3 {
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 840px) {
   .container {
     width: min(100% - 28px, var(--container));
   }
@@ -908,11 +924,11 @@ h3 {
   }
 
   h1 {
-    font-size: clamp(2.55rem, 12vw, 4.25rem);
+    font-size: clamp(2rem, 9.5vw, 3.15rem);
   }
 
   .hero {
-    padding-top: 48px;
+    padding-top: 44px;
   }
 
   .hero-card {
@@ -920,7 +936,7 @@ h3 {
   }
 
   .avatar-card {
-    min-height: 360px;
+    min-height: 330px;
     margin-top: 20px;
     padding: 26px;
   }
@@ -952,6 +968,64 @@ h3 {
 
   .footer-links {
     justify-content: flex-start;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: min(100% - 24px, var(--container));
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .brand {
+    gap: 10px;
+  }
+
+  .brand-mark {
+    width: 42px;
+    height: 42px;
+    border-radius: 14px;
+    box-shadow: 4px 4px 0 var(--text);
+  }
+
+  .hero-actions,
+  .contact-links,
+  .quick-stats {
+    display: grid;
+  }
+
+  .button,
+  .quick-stats span,
+  .contact-links a {
+    width: 100%;
+  }
+
+  .button {
+    box-shadow: 4px 4px 0 var(--text);
+    text-align: center;
+  }
+
+  .avatar {
+    width: 112px;
+    height: 112px;
+    font-size: 2.25rem;
+  }
+
+  .avatar-card {
+    min-height: 300px;
+    padding: 22px;
+  }
+
+  .project-card,
+  .feature-card,
+  .contact-card,
+  .portrait-panel,
+  .split-panel,
+  .contact-grid {
+    padding: 22px;
   }
 }
 
