@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Amber Root is a product-minded developer portfolio focused on reliable web apps, useful tooling, and thoughtful technical writing."
+    >
+    <meta name="theme-color" content="#111827">
+    <title>Amber Root | Product-minded developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-elevated="false">
+      <nav class="nav container" aria-label="Primary navigation">
+        <a class="brand" href="#home" aria-label="Amber Root home">
+          <span class="brand-mark">AR</span>
+          <span class="brand-copy">
+            <strong>Amber Root</strong>
+            <small>Developer Portfolio</small>
+          </span>
+        </a>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-menu">
+          <span class="sr-only">Toggle menu</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="site-menu">
+          <a href="#work">Work</a>
+          <a href="#writing">Writing</a>
+          <a href="#toolkit">Toolkit</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <button class="theme-toggle" type="button" aria-label="Switch to dark mode">
+            <span aria-hidden="true">Dark</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Available for thoughtful web work</p>
+            <h1>Building calm, useful software for real people.</h1>
+            <p class="hero-lede">
+              I am Amber Root, a product-minded developer who turns rough ideas into fast,
+              accessible, maintainable web experiences.
+            </p>
+            <div class="hero-actions" aria-label="Primary calls to action">
+              <a class="button button-primary" href="#work">See selected work</a>
+              <a class="button button-secondary" href="#contact">Start a conversation</a>
+            </div>
+            <div class="quick-stats" aria-label="Portfolio highlights">
+              <span><strong>8+</strong> projects shipped</span>
+              <span><strong>3</strong> focus areas</span>
+              <span><strong>100%</strong> responsive</span>
+            </div>
+          </div>
+
+          <div class="hero-card" aria-label="Profile summary">
+            <div class="profile-orbit" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="avatar-card">
+              <div class="avatar" aria-hidden="true">AR</div>
+              <h2>Hi, I am Amber.</h2>
+              <p>
+                I design and build interfaces, workflows, and documentation that help teams
+                move with confidence.
+              </p>
+            </div>
+            <div class="floating-note note-one">Frontend systems</div>
+            <div class="floating-note note-two">Product thinking</div>
+            <div class="floating-note note-three">Developer experience</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="intro-panel section">
+        <div class="container split-panel">
+          <div>
+            <p class="eyebrow">What this site is for</p>
+            <h2>A home base for projects, notes, and experiments.</h2>
+          </div>
+          <p>
+            This portfolio collects the kind of work I enjoy most: clean product surfaces,
+            reliable application architecture, and small details that make software easier to
+            trust. It is intentionally simple, fast, and easy to maintain.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" id="work">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Selected work</p>
+            <h2>Recent projects with practical outcomes.</h2>
+            <a class="text-link" href="#contact">Have a project in mind?</a>
+          </div>
+
+          <div class="card-grid">
+            <article class="project-card featured-card">
+              <div class="card-kicker">Product engineering</div>
+              <h3>Launchpad Dashboard</h3>
+              <p>
+                A responsive operations dashboard for tracking launch health, handoffs, and
+                customer-facing readiness in one place.
+              </p>
+              <ul class="tag-list" aria-label="Project technologies">
+                <li>React</li>
+                <li>Design systems</li>
+                <li>Analytics</li>
+              </ul>
+              <a href="#contact" aria-label="Ask about Launchpad Dashboard">Discuss a similar build</a>
+            </article>
+
+            <article class="project-card accent-blue">
+              <div class="card-kicker">Developer tools</div>
+              <h3>Workflow Kit</h3>
+              <p>
+                Internal tooling that reduces repetitive release chores and gives developers
+                clearer feedback before code reaches production.
+              </p>
+              <ul class="tag-list" aria-label="Project technologies">
+                <li>Node.js</li>
+                <li>Automation</li>
+                <li>CLI</li>
+              </ul>
+              <a href="#toolkit">See toolkit focus</a>
+            </article>
+
+            <article class="project-card accent-green">
+              <div class="card-kicker">UX implementation</div>
+              <h3>Studio Booking Flow</h3>
+              <p>
+                A polished booking experience with accessible forms, guided states, and a mobile
+                flow that feels just as complete as desktop.
+              </p>
+              <ul class="tag-list" aria-label="Project technologies">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Accessibility</li>
+              </ul>
+              <a href="#contact">Request a walkthrough</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section learning-strip" id="writing">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Notes and resources</p>
+            <h2>Clear writing for builders who like context.</h2>
+            <a class="text-link" href="#newsletter">Get future notes</a>
+          </div>
+
+          <div class="article-list" aria-label="Featured articles">
+            <a class="article-row" href="#newsletter">
+              <span class="article-date">Guide</span>
+              <strong>How I decide when a component deserves an abstraction</strong>
+              <small>6 min read</small>
+            </a>
+            <a class="article-row" href="#newsletter">
+              <span class="article-date">Checklist</span>
+              <strong>Pre-launch review for small web projects</strong>
+              <small>4 min read</small>
+            </a>
+            <a class="article-row" href="#newsletter">
+              <span class="article-date">Essay</span>
+              <strong>Designing interfaces that explain themselves</strong>
+              <small>8 min read</small>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="toolkit">
+        <div class="container">
+          <div class="section-heading centered">
+            <p class="eyebrow">Toolkit</p>
+            <h2>The work is strongest where product, code, and care overlap.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">01</span>
+              <h3>Frontend architecture</h3>
+              <p>
+                Component systems, state boundaries, routing, performance budgets, and patterns
+                teams can keep using after launch.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">02</span>
+              <h3>Product UX</h3>
+              <p>
+                Flows that make next steps obvious, reduce dead ends, and keep visual polish tied
+                to practical user outcomes.
+              </p>
+            </article>
+            <article class="feature-card">
+              <span class="feature-icon" aria-hidden="true">03</span>
+              <h3>Technical storytelling</h3>
+              <p>
+                Documentation, launch notes, and examples that help users and teammates understand
+                what changed and why it matters.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="container about-grid">
+          <div class="portrait-panel">
+            <div class="portrait" aria-hidden="true">AR</div>
+            <p>Product-minded developer, thoughtful collaborator, and careful finisher.</p>
+          </div>
+          <div>
+            <p class="eyebrow">About Amber</p>
+            <h2>I like software that feels approachable from the first click.</h2>
+            <p>
+              My work blends interface craft, engineering discipline, and the practical curiosity
+              needed to understand what people are trying to get done. I enjoy partnering with
+              founders, product teams, and independent creators on web experiences that need to be
+              both polished and durable.
+            </p>
+            <p>
+              Away from the editor, I am usually sketching ideas, reading about systems, or
+              improving the tiny rituals that make creative work easier to repeat.
+            </p>
+            <a class="button button-secondary" href="#contact">Let us build something useful</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container contact-grid">
+          <div>
+            <p class="eyebrow">Contact</p>
+            <h2>Have an idea that needs a clearer path?</h2>
+            <p>
+              Send a short note about what you are building, what is stuck, and what a successful
+              next step would look like. I will reply with a practical way to move forward.
+            </p>
+            <div class="contact-links">
+              <a href="mailto:hello@amberroot.dev">hello@amberroot.dev</a>
+              <a href="https://github.com/amberrootdev">GitHub</a>
+              <a href="https://www.linkedin.com/">LinkedIn</a>
+            </div>
+          </div>
+
+          <form class="contact-card" id="newsletter" action="mailto:hello@amberroot.dev" method="post">
+            <h3>Stay in the loop</h3>
+            <p>Occasional notes on design, development, and project momentum.</p>
+            <label>
+              Name
+              <input type="text" name="name" autocomplete="name" placeholder="Your name">
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+            </label>
+            <button class="button button-primary" type="submit">Sign me up</button>
+            <small>No spam. Just useful updates when there is something worth sharing.</small>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="brand" href="#home" aria-label="Amber Root home">
+            <span class="brand-mark">AR</span>
+            <span class="brand-copy">
+              <strong>Amber Root</strong>
+              <small>Developer Portfolio</small>
+            </span>
+          </a>
+          <p>Original portfolio site built for GitHub Pages.</p>
+        </div>
+        <div class="footer-links" aria-label="Footer links">
+          <a href="#work">Work</a>
+          <a href="#writing">Writing</a>
+          <a href="#toolkit">Toolkit</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="container copyright">
+        <span>All rights reserved (c) <span id="year">2026</span> Amber Root.</span>
+        <a href="#home">Back to top</a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
