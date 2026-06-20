@@ -1,13 +1,13 @@
-# Amber Root Portfolio
+# Responsive Portfolio Website Alexa
+## [Watch it on youtube](https://youtu.be/27JtRAI3QO8)
+### Responsive Portfolio Website Alexa
 
-A lightweight static portfolio for Amber Root on GitHub Pages.
+- Responsive Personal Portfolio Website Using HTML CSS & JavaScript
+- Smooth scrolling in each section.
+- Includes a light and dark mode.
+- Developed first with the Mobile First methodology, then for desktop.
+- Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
-## Preview locally
+💙 Join the channel to see more videos like this. [Bedimcode](https://www.youtube.com/c/Bedimcode)
 
-Open `index.html` in a browser, or serve the folder with any static server:
-
-```bash
-python3 -m http.server 8080
-```
-
-Then visit `http://localhost:8080`.
+![preview img](/preview.png)
